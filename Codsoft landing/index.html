@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+        <div class="logo">
+            <i class='bx bxs-crown'></i>
+            <h1>choco<span>Land</span></h1>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#"><i class='bx bx-cart-alt' ></i></a></li>
+        </ul>
+    </nav>
+    <div class="content">
+<div class="text">
+    <span class="span">Dairy Milk</span>
+    <h3>All Your</h3>
+    <h1>tasty choice</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Nemo accusamus at suscipit voluptas sit</p>
+    <a href="#" class="btn">Buy Now</a>
+</div>
+<div class="div-img">
+    <img id="big-img" src="./WhatsApp Image 2023-08-23 at 10.52.30 AM (1).jpeg" alt="">
+</div>
+<div class="small-img">
+    <img onclick="myChoc(this.src)" src="./WhatsApp Image 2023-08-23 at 10.52.30 AM (1).jpeg" alt="">
+    <img onclick="myChoc(this.src)"  src="./WhatsApp Image 2023-08-23 at 10.52.30 AM (2).jpeg" alt="">
+    <img onclick="myChoc(this.src)" src="./WhatsApp Image 2023-08-23 at 10.52.30 AM.jpeg" alt="">
+</div>
+
+    </div>
+  </div>
+
+
+
+
+<script>
+    let bigimage = document.getElementById("big-img");
+
+    function myChoc(choc){
+        bigimage.src = choc
+    }
+</script>
+
+
+
+
+
+
+</body>
+</html>
